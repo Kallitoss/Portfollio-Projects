@@ -9,7 +9,7 @@ SELECT * FROM COVIDDEATHS
 WHERE continent is not null
 ORDER BY 3,4
 
---SELECTING DATA THAT WE I'AM GOING TO START WITH
+--SELECTING DATA THAT I'AM GOING TO START WITH
 
 SELECT location, date , total_cases, new_cases, total_deaths, population
 FROM COVIDDEATHS

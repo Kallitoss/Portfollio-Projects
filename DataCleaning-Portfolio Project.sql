@@ -60,8 +60,8 @@ FROM NashvileHousing
 
 
 SELECT
-SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) - 1) AS adress,
-SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress) + 1, LEN(PropertyAddress)) AS adress
+SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) - 1) AS Adress,
+SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress) + 1, LEN(PropertyAddress)) AS City
 FROM NashvileHousing
 
 ALTER TABLE NashvileHousing

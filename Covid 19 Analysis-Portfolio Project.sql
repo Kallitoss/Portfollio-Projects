@@ -51,7 +51,7 @@ ORDER BY 1,2
 
 --Looking at countries with highest infection rate compared to population
 
-SELECT location,population, MAX(total_cases) AS HighestInfectionCountInCOuntry, MAX((total_cases/NULLIF(population, 0) *100)) AS ProcentageOfPeopleThatGotCovid
+SELECT location,population, MAX(total_cases) AS HighestInfectionCountInCOuntry, MAX((total_cases / population)) *100 AS ProcentageOfPeopleThatGotCovid
 FROM COVIDDEATHS
 --WHERE location LIKE '%erbia%'
 WHERE continent IS NOT NULL
